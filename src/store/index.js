@@ -6,8 +6,8 @@ import uiReducer from "./ui";
 const store = configureStore({
   reducer: {
     ui: uiReducer,
-    cart: cartReducer
-  }
+    cart: cartReducer,
+  },
 });
 
 export default store;

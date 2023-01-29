@@ -14,11 +14,11 @@ const Cart = (props) => {
         {cartItems.map((item) => (
           <CartItem
             item={{
-              id: item.itemId,
+              id: item.id,
               title: item.title,
               quantity: item.quantity,
               total: item.totalPrice,
-              price: item.price
+              price: item.price,
             }}
           />
         ))}

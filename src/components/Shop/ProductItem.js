@@ -1,4 +1,4 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useEffect } from "react-redux";
 import { cartActions } from "../../store/cart";
 
 import Card from "../UI/Card";
@@ -13,7 +13,7 @@ const ProductItem = (props) => {
       cartActions.addItem({
         id,
         title,
-        price
+        price,
       })
     );
   };
